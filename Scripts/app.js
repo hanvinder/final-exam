@@ -35,14 +35,14 @@ function throwdice(){
 var randomdices=Math.round(Math.random()*5);
 document.images["mydice1"].src=eval("face"+randomdices+".src");
 var die1 = document.getElementById("die1");
-var d1 = Math.floor(Math.random() * 6) + 1;
-die1.innerHTML = d1;
+
+die1.innerHTML = randomdices;
 
 //create a random integer between 0 and 5
 var randomdice=Math.round(Math.random()*5);
 document.images["mydice2"].src=eval("face"+randomdice+".src");
 var die2 = document.getElementById("die2");
-var d2 = Math.floor(Math.random() * 6) + 1;
-die2.innerHTML = d2;
+// var d2 = Math.floor(Math.random() * 6) + 1;
+die2.innerHTML = randomdice;
 status.innerHTML = "You rolled "+diceTotal+".";
 }
