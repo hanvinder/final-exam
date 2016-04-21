@@ -17,14 +17,14 @@ face5.src="../img/d6.gif"
 
 function throwdice(){
 //create a random integer between 0 and 5
-var d1=Math.round(Math.random()*5)
+var d1= Math.floor(Math.random() * 6) + 1;
 document.images["mydice1"].src=eval("face"+di+".src")
 var die1 = document.getElementById("die1");
 
 die1.innerHTML = d1;
 
 //create a random integer between 0 and 5
-var d2=Math.round(Math.random()*5)
+var d2 = Math.floor(Math.random() * 6) + 1;
 document.images["mydice2"].src=eval("face"+d2+".src")
 var die2 = document.getElementById("die2");
 // var d2 = Math.floor(Math.random() * 6) + 1;
