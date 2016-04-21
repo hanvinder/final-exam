@@ -1,6 +1,7 @@
-section{
+.first, .second{
 	float: left;
-	padding: 100px;
+	padding-right:  100px;
+	margin: 0 auto;
 }
 
 
