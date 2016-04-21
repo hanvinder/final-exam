@@ -17,16 +17,17 @@ face5.src="../img/d6.gif"
 
 function throwdice(){
 //create a random integer between 0 and 5
-var randomdice=Math.round(Math.random()*5)
-document.images["mydice1"].src=eval("face"+randomdice+".src")
+var d1=Math.round(Math.random()*5)
+document.images["mydice1"].src=eval("face"+di+".src")
 var die1 = document.getElementById("die1");
-die1.innerHTML = randomdice;
+
+die1.innerHTML = d1;
 
 //create a random integer between 0 and 5
-var randomdice=Math.round(Math.random()*5)
-document.images["mydice2"].src=eval("face"+randomdice+".src")
+var d2=Math.round(Math.random()*5)
+document.images["mydice2"].src=eval("face"+d2+".src")
 var die2 = document.getElementById("die2");
-
-die2.innerHTML = randomdice;
+// var d2 = Math.floor(Math.random() * 6) + 1;
+die2.innerHTML = d2;
 status.innerHTML = "You rolled "+diceTotal+".";
 }
