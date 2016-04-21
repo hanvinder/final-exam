@@ -2,59 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS Section -->
-    <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="Scripts/lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/app.css">
-    <title>Final exam</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!----------------Internal	Documentation------------------------->
+	<!--index.html> Hanvinder Singh Rai>Comp1073-Final Exam> 21/04/2016-->
+
+	<!----------------- CSS Section --------------------->
+	<link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="Scripts/lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/app.css">
+	<title>Final exam</title>
 </head>
 
 <body id="index">
 
-    <!-- Header area with Navbar partial -->
-    <header id="mainHeader">
 
-    </header>
-
-
-    <div class="container">
-        <div class="row">            
-            <div class="col-md-offset-4 col-md-4 text-center">
-                <canvas id="canvas"></canvas>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-4 col-md-4 text-center">
+				<canvas id="canvas"></canvas>
+			</div>
+		</div>
 
 
-</head>
-<body>
-	<section class="first">
-	<img src="img/d1.gif" name="mydice1">
 
-<div id="die1" class="dice">0</div>
-	</section>
-	<section class="second">
-   <img src="img/d1.gif" name="mydice2">
-<div id="die2" class="dice">0</div>
-	</section>
-	<section class="button">
-<input type="button" value="Throw dice!" onClick="throwdice()">
-<section>
+		</head>
 
-	
-	
-	
-	<!--
-<div id="die1" class="dice">0</div>
-<div id="die2" class="dice">0</div>
-<button onclick="rollDice()">Roll Dice</button>
-<h2 id="status" style="clear:left;"></h2>
--->
-<script src="Scripts/lib/jquery/dist/jquery.min.js"></script>
-<script src="Scripts/app.js"></script>
-</body>
+		<body>
+			<!--First dice image and value-->
+			<section class="first">
+				<img src="img/d1.gif" name="mydice1">
+				<div id="die1" class="dice">0</div>
+			</section>
+
+			<!--Second dice image and value-->
+			<section class="second">
+				<img src="img/d1.gif" name="mydice2">
+				<div id="die2" class="dice">0</div>
+			</section>
+
+			<!--On click event button-->
+			<section class="button">
+				<input type="button" value="Throw dice!" onClick="throwdice()">
+				<section>
+
+	</div>
+	<Js script section>
+		<script src="Scripts/lib/jquery/dist/jquery.min.js"></script>
+		<script src="Scripts/app.js"></script>
+		</body>
+
 </html>
