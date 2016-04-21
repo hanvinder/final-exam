@@ -1,18 +1,3 @@
-/*function rollDice(){
-    var die1 = document.getElementById("die1");
-    var die2 = document.getElementById("die2");
-    var status = document.getElementById("status");
-    var d1 = Math.floor(Math.random() * 6) + 1;
-    var d2 = Math.floor(Math.random() * 6) + 1;
-    var diceTotal = d1 + d2;
-    die1.innerHTML = d1;
-    die2.innerHTML = d2;
-    status.innerHTML = "You rolled "+diceTotal+".";
-    if(d1 == d2){
-        status.innerHTML += " DOUBLES! You get a free turn!!";
-    }
-}
-
 
 */
 
@@ -32,8 +17,8 @@ face5.src="../img/d6.gif"
 
 function throwdice(){
 //create a random integer between 0 and 5
-var randomdice=Math.round(Math.random()*5)
-document.images["mydice1"].src=eval("face"+randomdice+".src")
+var d1 = Math.floor(Math.random() * 6) + 1;
+document.images["mydice1"].src=eval("face"+d1+".src")
 var die1 = document.getElementById("die1");
 var d1 = Math.floor(Math.random() * 6) + 1;
 die1.innerHTML = d1;
