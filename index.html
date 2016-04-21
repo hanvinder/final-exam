@@ -32,25 +32,19 @@
 
 </head>
 <body>
-<table border="0" bordercolor="#000000" summary="">
-<tr>
-<td><img src="d1.gif" name="myrune1">
+	<img src="img/face1.jpg" name="mydice1">
 <form>
-<input type="button" value="Throw dice!" onClick="changePic('myrune1')">
+<div id="die1" class="dice">0</div>
 </form>
-</td>
-<td><img src="d2.gif" name="myrune2">
+   <img src="img/face1.jpg" name="mydice2">
 <form>
-<input type="button" value="Throw dice!" onClick="changePic('myrune2')">
+
+<div id="die2" class="dice">0</div>
+<input type="button" value="Throw dice!" onClick="throwdice()">
+<h2 id="status" style="clear:left;"></h2>
 </form>
-</td>
-</tr>
-</table>
-<input onclick="roll()" name="Button1" type="button" value="roll" style="width: 117px">
-<input id="rollNum" type="text" value="10">
-<div id="result" style="width:200px;height:200px;overflow:scroll">
-</div>
-<div id="possTable"></div>
+	
+	
 	
 	<!--
 <div id="die1" class="dice">0</div>
