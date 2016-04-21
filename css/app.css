@@ -1,15 +1,10 @@
 section{
 	float: left;
+	padding: 100px;
 }
 
-section.first{
-	left: 100px;
-}
-
-section.second{
-	right: 100px;
-}
 
 section.button{
 	clear: both;
+	margin: 0 auto;
 }
