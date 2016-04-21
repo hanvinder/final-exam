@@ -44,5 +44,4 @@ document.images["mydice2"].src=eval("face"+randomdice+".src");
 var die2 = document.getElementById("die2");
 // var d2 = Math.floor(Math.random() * 6) + 1;
 die2.innerHTML = randomdice;
-status.innerHTML = "You rolled "+diceTotal+".";
 }
