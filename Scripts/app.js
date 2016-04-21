@@ -1,48 +1,24 @@
-/*function rollDice(){
-    var die1 = document.getElementById("die1");
-    var die2 = document.getElementById("die2");
-    var status = document.getElementById("status");
-    var d1 = Math.floor(Math.random() * 6) + 1;
-    var d2 = Math.floor(Math.random() * 6) + 1;
-    var diceTotal = d1 + d2;
-    die1.innerHTML = d1;
-    die2.innerHTML = d2;
-    status.innerHTML = "You rolled "+diceTotal+".";
-    if(d1 == d2){
-        status.innerHTML += " DOUBLES! You get a free turn!!";
-    }
+function changePic(myrune1){
+var randomdice=Math.floor(Math.random()*6)
+document.images[myrune1].src="face"+Number(randomdice+1)+".jpg"
+return randomdice+1
 }
-
-
-*/
-
-//preload the six images first
-var face0=new Image()
-face0.src="../img/d1.gif"
-var face1=new Image()
-face1.src="../img/d2.gif"
-var face2=new Image()
-face2.src="../img/d3.gif"
-var face3=new Image()
-face3.src="../img/d4.gif"
-var face4=new Image()
-face4.src="../img/d5.gif"
-var face5=new Image()
-face5.src="../img/d6.gif"
-
-function throwdice(){
-//create a random integer between 0 and 5
-var randomdices=Math.round(Math.random()*5);
-document.images["mydice1"].src=eval("face"+randomdices+".src");
-var die1 = document.getElementById("die1");
-
-die1.innerHTML = eval(randomdices);
-
-//create a random integer between 0 and 5
-var randomdice=Math.round(Math.random()*5);
-document.images["mydice2"].src=eval("face"+randomdice+".src");
-var die2 = document.getElementById("die2");
-// var d2 = Math.floor(Math.random() * 6) + 1;
-die2.innerHTML = eval(randomdice);
-status.innerHTML = "You rolled "+diceTotal+".";
+function roll(){
+possibles=new Array()
+res=""
+num=document.getElementById("rollNum").value
+for(i=0;i<12;i++){possibles[i]=0}
+for (i=0;i<num;i++){
+d1=changePic("myrune1")
+d2=changePic("myrune2")
+poss=d1+d2
+possibles[poss-2]+=1
+res+="Roll #"+Number(i+1)+": "+d1+"  "+d2+"<br>"
+}
+result.innerHTML=res
+res=""
+for (i=0;i<11;i++){
+res+="The Sum of "+Number(i+2)+" occurred :" + possibles[i] +" Times<br>"
+}
+possTable.innerHTML=res
 }
