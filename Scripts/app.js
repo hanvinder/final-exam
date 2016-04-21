@@ -14,17 +14,16 @@ var face6=new Image()
 face6.src="../img/d6.gif"
 
 function throwdice(){
-//create a random integer between 0 and 5
-var randomdices=Math.round(Math.random()*5);
+//create a random integer between 1 and 6
+var randomdices=Math.round(Math.random()*6);
 document.images["mydice1"].src=eval("face"+randomdices+".src");
 var die1 = document.getElementById("die1");
 
 die1.innerHTML = randomdices;
 
-//create a random integer between 0 and 5
-var randomdice=Math.round(Math.random()*5);
+//create a random integer between 1 and 6
+var randomdice=Math.round(Math.random()*6);
 document.images["mydice2"].src=eval("face"+randomdice+".src");
 var die2 = document.getElementById("die2");
-// var d2 = Math.floor(Math.random() * 6) + 1;
 die2.innerHTML = randomdice;
 }
