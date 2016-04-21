@@ -32,8 +32,8 @@ face5.src="../img/d6.gif"
 
 function throwdice(){
 //create a random integer between 0 and 5
-var randomdice=Math.round(Math.random()*5);
-document.images["mydice1"].src=eval("face"+randomdice+".src");
+var randomdices=Math.round(Math.random()*5);
+document.images["mydice1"].src=eval("face"+randomdices+".src");
 var die1 = document.getElementById("die1");
 var d1 = Math.floor(Math.random() * 6) + 1;
 die1.innerHTML = d1;
